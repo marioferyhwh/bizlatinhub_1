@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::resource('auto','TbAutoController');
+Route::resource('documenttype','TbDocumentTypeController');
+Route::resource('sellauto','TbSellAutoController');
+Route::resource('usertype','TbUserController');
+Route::resource('user','TbUserTypeController');
